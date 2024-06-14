@@ -31,6 +31,7 @@ public class TutorService {
 		tutor.setFirstname(request.getFirstname());
 		tutor.setLastname(request.getLastname());
 		tutor.setEmail(request.getEmail());
+		tutor.setTelefono(request.getTelefono());
 		return tutor;
 	}
 	public Boolean deletTutor(Long id) {
