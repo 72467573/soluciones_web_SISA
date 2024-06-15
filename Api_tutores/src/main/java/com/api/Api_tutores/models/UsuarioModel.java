@@ -7,26 +7,25 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 
 @Entity
-@Table(name = "tutor")
-public class TutorModel {
+@Table(name = "usuario")
+public class UsuarioModel {
 	
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY )
 	private Long id;
 	
-	@Column(name = "firstname")
-	private String firstname;
+	@Column(name = "nombre")
+	private String nombre;
 
-	@Column(name = "Lastname")
-	private String Lastname;
+	@Column(name = "apellido")
+	private String apellido;
 	
 	@Column(name = "email")
 	private String email;
 	
 	@Column(name = "telefono")
 	private String telefono;
-	
 
 	public Long getId() {
 		return id;
@@ -36,20 +35,20 @@ public class TutorModel {
 		this.id = id;
 	}
 
-	public String getFirstname() {
-		return firstname;
+	public String getNombre() {
+		return nombre;
 	}
 
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
-	public String getLastname() {
-		return Lastname;
+	public String getApellido() {
+		return apellido;
 	}
 
-	public void setLastname(String lastname) {
-		Lastname = lastname;
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
 	}
 
 	public String getEmail() {
@@ -67,4 +66,7 @@ public class TutorModel {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
+	
+
+	
 }
